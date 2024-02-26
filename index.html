@@ -1,19 +1,477 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv="x-ua-compatible" content="ie=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<title>Page Title</title>
-		<meta name="description" content="something" />
-		<meta name="author" content="me" />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hannah Flintermann Documentation WiSe 2023 </title>
+    <meta
+      name="description"
+      content="Just a pure semantic HTML markup, without .classes.  Built with Pico CSS."
+    />
+    <link rel="shortcut icon" href="https://picocss.com/favicon.ico" />
 
-		<link rel="stylesheet" type="text/css" href="/style.css" />
-	</head>
-	<body>
-		<h1>Hello World</h1>
-		<img src="/assets/images/kitten.png" />
-		<script type="text/javascript" src="/index.js"></script>
-	</body>
+    <!-- Pico.css (Classless version) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.classless.min.css"
+    />
+		<link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <img src="photos/HannahLogo.png" class="logo">
+    <nav> <code> Hannah Flintermann, <br> Grundlagenklasse digitale Gestaltung 2023/24 </code>
+</nav>
+    <!-- Header -->
+    <header>
+        <hgroup>
+          <h1>Documentation</h1>
+          <h2>Digital Design</h2>
+          <h5>Hannah Flintermann</h5>
+          <p><br> a documentation of my attempt on trying to understand the basics of coding and digital design <code>2023/24</code></p>
+          <p><code>filled with my weekly projects, <br>
+             takeaways and other thoughts on the digital realm</code></p>
+             <img src="photos/Animation4.gif" class= "animation">
+        </hgroup>
+  </header>
+<article id="article0">
+  <h3>Overview</h3>
+  <ul>
+    <li><a href="#article">Analog and Digital Algorhithms</a></li>
+    <li><a href="#article2">Project Morning Box</a></li>
+    <li><a href="#article3">Creating a Website for the Group Project</a></li>
+  </ul>
+  </article>
+               <!-- Article-->
+      <article id="article">
+        <h4 onclick="toggleContent('article1')">Analog and Digital Algorithms <code>15.10.2023</code></h4>
+        <div id="article1Content" style="display: none;">
+          <h4><td>Analog Algorhithms</td></h4>
+        <p>
+           Algorithms seemed like something abstract and far away to me, 
+           although, of course, I know we are surrounded by them at all times. 
+           When we were being told to create our own algorithm, meant to create a design pattern by just using word instructions. 
+           Which we would then give to to others, that would follow them and create an image just by what you've wrote
+           I was curious to find out, how I could make it work. Surprisingly it was very difficult to create just the right
+           <td><strong>mixture between determination and coincidence,</strong></td> so that there was a certain degree of variation, 
+           but still distinct features by which one could identify 
+           the idea behind the design.
+           <br><br>
+           <td><strong>my first attempt on creating an algorithm:</strong></td>
+           <blockquote>
+            Draw a 10 × 10 cm square. Draw a line from the center of the top horizontal line of the square to 
+            the center of the bottom line of the square. Draw the diagonal from the top center line to the bottom 
+            left point. Draw a diagonal from the top line to the bottom right point. 
+            Draw a diagonal from the center of the bottom line of the square to the top left point. 
+            Draw a diagonal from the center of the bottom line of the square to the top right point. 
+            Draw a circle that touches all the inner centers of the square. 
+           Paint the central rectangle black and draw a circle at each corner of the square 
+            with the corner point of the square in the middle of the circle. 
+            The circles should be so large that they border the outer line of the inner circle
+            <footer>
+              <cite> the original phrasing was translated so there might be slight differences</cite>
+            </footer>
+           </blockquote>
+           <img src="photos/Versuch.png" alt="Image Description" style="width: 600px;">
+           <figcaption><code>the first algorhithm was quite strict in it's rules, so I decided to change it up a bit </code></figcaption>
+           <br><br>
+            I tried quite a lot of different wordings until I was 
+           satisfied with the outcome. At first there was very little variation, because I thought 
+           the task was to word the instructions so precise, that the outcome would be excatly the image you had in mind. 
+           I then understood, that leaving a little room for interpretation and chance, would actually add a lot to the design, 
+           because it was a lot more interesting, to look at how different people would react to the little room you left for improvisation. 
+           the final wording of my algorhithm was:
+           <br><br>
+           <td><strong>my second attempt on creating an algorithm:</strong></td>
+           <blockquote> <td> 
+            Draw with a black marker. Do not fill the sheet to the edge, but leave at least 4 cm space.
+            Draw a circle about 3 cm in size. Draw a small circle in the center of the large circle. 
+            Draw four ovals that evenly cross the large circle. Connect the four ovals with an even black curved line. 
+            Draw a line from the outer end of each oval outwards. Connect some of the lines together. 
+            Add more ovals and lines bordering the existing pattern to complete the pattern.</td>
+            <footer>
+              <cite> the original phrasing was translated so there might be slight differences</cite>
+            </footer>
+          </blockquote> 
+          Overall I found the thought behind this task really intriguing because it highlighted 
+           how little variations of phrasing could have a huge difference in the outcome of something. 
+           I Figured that this was not just the case in the digital realm, but also in real life. Little changed of words, 
+           actions and thoughts, can have an immense impact on your reality. 
+           <div class="image-container">
+           <img src="photos/AlgorithmusAlles.png" alt="Image Description" style="width: 50%; display: inline-block;">
+        <img src="photos/AlgorithmusAlles2.png" alt="Image Description" style="width: 50%; display: inline-block;">
+      </div>
+        <code>Some of the Images, created by close ones, that read the description of the algorithm, interpreted it and turned it into an image </code>
+           <br>
+           <br>
+           Fabian told us a lot about the changes
+            that would be expected in the field of art and in all aspects of life basically. 
+            The way everything is and would possibly become fully digitalized. What made me quite sad was the realization 
+            that this was the thruth, all things we know nowadays are being translated into algorhithms, equasions and numbers. 
+            From a purely human perspective I wonder if reality is really that simple. If being human, the experience of being alive, of looking at the world 
+            can be encaptured in these machines. We learned that generally computers only differenciate between 0 and 1. True or false. Right and wrong. 
+            I wonder if that way to view the world, society, humans, is a good way to move forward. Or if potentially, we loose a lot of the beauty and magic of being 
+            alive in these digital realms. but that is just a personal view of course. There is nothing you can do about it anyways.
+             Withing the next weeks this thought process about my own opinion on the topic was very present.
+        </p>
+        <br>
+        <br>
+        <h4>Digital Algorhithms</h4>
+        <p>Thematically following the first week, in week three we were supposed 
+          to program our own “algorithm” using p5js. The aim was to create <td><strong>“small multiples”, </strong></td>
+          i.e. small designs that had both some uniform components and differences that were created 
+          randomly every time the page was reloaded. There should also be a certain degree of chance here, 
+          but there should also be consistency. As inspiration for the design, 
+          I chose the mandala-like design that I had already taken in the first week of creating the algorithm. 
+          Since I found the two projects to at least partially build on each other thematically, I decided to look at them 
+          together in my documentation. <br> <br>
+
+          To build my code, I first started by importing type script files for p5js into Replit with the 
+          setup in which I had a canvas size of 500x500. 
+          The setup only runs once and determines components such as background color, 
+          stroke color and size of the canvas. I then explained some global variables such as “area”, “number” 
+          (to define the number of components), “gutter” (the distance between individual grid cells) 
+          as well as width, height, X, Y (the original position of the design in the Grid) and “Diam” 
+          (the extent of the individual elements in the grid) to define the size and layout of the grid. 
+          I then created some nested loops that divide the canvas into a grid in which each small multiple should have a position. 
+          In these loops I also created the individual shape and color components, which were to be generated randomly.
+           The individual shapes each had a value in which the size was randomly generated within a given frame 
+           (e.g. Random (50.90). I used circles, ellipses and lines for the design. <br> <br>
+          
+          Looking back, I can say that I was and am generally quite satisfied with the project, even if certain parts could definitely use some improvement. 
+          Similary to the project at the beginning of the semester, it would have been interesting to make even more coincidence possible. 
+          The individual shapes could also not be adapted to a changed diameter, as the construction would then collapse. 
+          I also wondered why there were a bunch of lines in the corner of my design. 
+          Nevertheless, the project gave me a better view of the opportunities that arise from working with algorithms, but from a philosophical perspective also the human desire for control and social norms</p>
+          <div class="image-container2">
+          <img src="photos/Variation1.png" alt="Image Description" style="width: 300px;">
+          <img src="photos/Variation2.png" alt="Image Description" style="width: 300px;">
+        </div>
+          <code>My homework for the "small multiples" task. You can see slight changes of the position, width and height of the shapes. But you do have look a little closer in order to notice </code>
+        <footer><small>Project: creating your own algorhithm</small></footer>
+        </div>
+      </article>
+      <!-- ./ Article-->
+      <article id="article2">
+        <h4 onclick="toggleContent('article2')">Project Morning Box <code>12.12.2023</code></h4>
+        <div id="article2Content" style="display: none;">
+        <h4>Project Morning Box </h4>
+        <p>
+          After working with hardware for the first time the previous week (keyboard hack), 
+          we were now supposed to build and present a prototype that had both software and hardware components. 
+          Fabian divided the teams. I worked with Leonie and we initially brainstormed a bit about 
+          the ideas we had; We quickly agreed that we would both find a little everyday helper quite interesting. 
+          The idea was to develop a tool that would make the otherwise often stressful and disorganized
+           morning a little more cheerful and structured.
+          <br>
+          <br>
+          To do this,we decided that there should be a small tool placed in the bathroom that sets a timer 
+          when you close the bathroom door to give each person a certain amount of time in the bathroom.
+          So that everyone has their set timespot where they can take tehir time to get ready, while also 
+          taking care, that the other have enough time to get ready. 
+          <br>
+          <br>
+          <img src="photos/MorningBox3.png" alt="Image Description" style="width: 800px;">
+          <br>
+          <br>
+          A morning playlist should also be played when entering the bathroom, 
+          which will try to lift your mood in the morning. In order to ensure that these functions could be 
+          implemented at all, we first looked at the existing software “Keyboard Maestro” and ways to 
+          trigger a signal when the door was closed. We also decided that the everyday helper should be very 
+          compact and easy to use. We decided to trigger the signal using a circuit that is closed when the door 
+          is closed. This is in turn connected to a specific letter key on the keyboard chip that we had from 
+          the previous week. Triggering this key then triggers a signal in the computer's Keyboard Maestro software, 
+          making the eventual function possible.
+          <br>
+          <br>
+          <img src="photos/MorningBox1.png" alt="Image Description" style="width: 800px;">
+          <code>photo from our PowerPoint, explaining the way the Box is supposed to work</code>
+          <br>
+          <br>
+          When implementing it, our first problem was soldering, as none of us had any real experience with it. 
+          It took us a long time to connect the two cables to the keyboard.
+          When this was the case, we connected the keyboard to my laptop and checked the function of the key 
+          by holding the two cables together to close the circuit. After some time it worked and the "8" 
+          key was triggered by connecting the two cables on my computer. 
+          The next problem was finding the right features in Keyboard Maestro. 
+          There was no real timer function, just a “pause” function that limited the time 
+          in certain applications. We experimented a lot, tried to program the whole thing, 
+          and ultimately decided to work around the problem by combining two of our functions. 
+          Closing the circuit triggered the pause function and the opening of the playlist, 
+          which meant that this playlist was only played for a certain time, 
+          after which a signal tone was heard. We tested the function often and everything seemed to work, 
+          although there were a few times when the duration of the playlist played either a little shorter 
+          or a little longer than intended by the pause function.
+          <br>
+          <br>
+          We also started building the prototype, in the form of a small box, 
+          with a door that would represent the bathroom door, to which an aluminum foil was attached. 
+          Inside were the cables that connected to the keyboard chip and thus the compute. They touched the aluminum 
+          foil on the inside when the door was closed. We discussed that Leonie would work a little further on making the prototype look appealing and 
+          I would prepare the PowerPoint presentation. Since we were a bit skeptical as to whether the project 
+          would actually work when presented, we shot a video to prove it just to be on the safe side. And lucklily we did, 
+          because of course 
+         the prototype did in fact not work on the day of the presentation.
+         <br>
+         <br>
+        who would have expected otherwise.
+        <br><br>
+        All in all, the project inspired me to think in terms of product design and tools, as there are completely new and exciting possibilities. 
+        On the other hand, I also found the part with soldering and electronics very annoying, as I don't really have an interest to learn about it. 
+        I found the idea behind the product, as well as creating a storyline etc., to be far more interesting.
+        </p>
+        <br>
+        <img src="photos/MorningBox2.png" alt="Image Description" style="width: 800px;">
+        <footer><small>Project: creating an image using p5js</small></footer>
+        </div>
+      </article>
+      <!-- ./ Article-->
+      
+      <!-- ./ Article-->
+      <article id="article3">
+        <h4 onclick="toggleContent('article3')">Creating a Website for the Group Project <code>16.01.2024</code></h4>
+        <div id="article3Content" style="display: none;">
+        <h4>The sleeping uncle project</h4>
+        <p>
+          Before the lecture free period began, we started with a larger group project. 
+          At first I thought it was great that we had the opportunity to individually 
+          set a focus that then interested us more. I was on the documentation team with Bleona and Isabella, 
+          which I personally found very exciting because, on the one hand, I would like to learn to film and 
+          work with video editing programs, and on the other hand, I also found building websites very exciting. </p>
+          <img src="photos/TeamDoku.png" alt="Image Description" style="width: 800px;align-items: center;">
+        <code>some photos we took the first week</code>
+        <br><br>
+        In the first week we set general 
+        to-dos and divided the tasks among ourselves. 
+        We created joint mood boards and I designed a PowerPoint presentation 
+        in which we presented them and addressed some open questions and problems. 
+        Documenting the process has been a bit of a casual thing since week one. 
+        At the weekend I sat down directly at the website and spent a total of at least
+         5 hours working on a very small-step website tutorial, which meant that 
+         at the beginning of the next week I already had the basis of a finished website that 
+         theoretically just needed to be personalized.
+         <br>
+         <br>
+         <img src="photos/Doku3.png" alt="Image Description" style="width: 800px;align-items: center;">
+
+         <br><br>
+         Sadly, Fabian rejected this and we should start from 0. At first I was very disappointed 
+         and frustrated because the tutorial cost me a lot of nerves, but in the end I'm very happy 
+         because it gave us good tools for building a website that we could also use for semester submissions. 
+         After we first roughly sketched out the structure of the website as we imagined it, 
+         I first started designing the header. 
+         The link to “pico.css” made this much easier because there was already a basic framework. 
+         I divided the individual sections into h1, h2, h3 etc. as well as individual groups (e.g. “hgroup”), 
+         inserted the logo and then determined the style in a single tag. In the “nav bar” 
+         I added some general information about us. I also added an illustration as a background image. 
+         We also use individual elements from the “pico.css” example, such as the accordions. 
+         All of this helped us a lot to design the look of the site in a very simple, very beautiful way.
+         <br><br>
+         <img src="photos/Website1.png" alt="Image Description" style="width: 700px;align-items: center;">
+         <img src="photos/Website2.png" alt="Image Description" style="width: 700px;">
+         <img src="photos/Website3.png" alt="Image Description" style="width: 700px;">
+         <code>an overview of the current state of the website</code>
+         <br><br>
+         Over the next few weeks we added the individual texts and images into our basic framework. 
+         What I found very difficult was getting the website to adapt to the window size. 
+         Sometimes you had to experiment a lot or discuss things with Chat GPT before you could 
+         finally find a solution. We also didn't get along well with building the repository 
+         because we couldn't push and push each other's changes. So we simply designed most of it on my 
+         computer without having to constantly send it back and forth to each other. Last week we finished 
+         building the website. I tried to do something with Premiere Pro, and also found Premiere Rush to 
+         be a good and much lighter alternative to Premiere Pro. We created a storyboard where we 
+         summarized which scenes we had to film and how.
+         <br><br>
+         What really stressed me out was filming and editing the product video, 
+         as I would have liked to have filmed it before the start of the lecture-free period,
+          but in the end it didn't work out well because the project wasn't finished at that point. 
+          Likewise, the prototype simply didn't look particularly nice, apart from the animation, 
+          which looked really great. So we tried to fake the whole thing, but it still just didn't 
+          look good. Nevertheless, we filmed all the scenes that we wanted to have in the video. 
+          Bleona, Isabella, Mirea and I helped Arne buy the materials, lay the carpet, and tried to 
+          improve the look of the prototype a little by adding small illustrations. 
+          We were all a little frustrated that the project wasn't finished yet. 
+          I have to say that communication and work with each other worked very 
+          well within our group, everyone had their tasks and always communicated the 
+          latest status to the others. It was very difficult within the class.
+          <br><br>
+          It definitely has been a challenge to complete a project with a group this big. 
+          But i really do feel like it has a lot of advantages and learnings to 
+          do group projects. Though it can be super frustrating; You learn how to take responsability, 
+          how to communicate and make decisions together rather than by yourself. 
+          You learn how to find compromises and how to express criticism and how to pitch and present 
+          your ideas to a group of people. 
+          All of these seem like really important learnings also in regard to our future careers. 
+          Also, I liked the way it was not just about coding but that for instance our group
+          could also learn about video editing etc. I would be looking forward to doing more projects 
+          like this in the future.
+        <footer><small>Project: </small></footer>
+        </div>
+      </article>
+      <div class="animation-container">
+      <img src="photos/Animation5.gif" class= "animation">
+    </div>
+    <footer> <small>Built with <a href="https://picocss.com">Pico</a> • <a href="https://github.com/picocss/examples/blob/master/v1-classless/index.html">Source code</a></small> </footer> <!-- ./ Footer --> <!-- Minimal theme switcher -->
+              <style>
+                 nav {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+                header {
+   width: 100%; 
+   height: 100vh;
+        background-image: url("assets/Monster2.png");
+        background-size: cover;
+        background-position: center;
+
+}
+hgroup {
+  position: absolute;
+  top: 50%; /* Adjust as needed */
+  left: 50%; /* Adjust as needed */
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+                .logo{
+  position: absolute;
+  top: 20px; /* Adjust as needed */
+  left: 20px; /* Adjust as needed */
+  width: 200px;
+  z-index: 1;
+}
+.animation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Adjust as needed */
+    margin: 0;
+  }
+
+.animation{
+  width: 400px;
+}
+/* Add this CSS to style the image container */
+.image-container {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping onto new lines */
+}
+
+.image-container img {
+  margin-right: 10px; /* Optional: Add some space between images */
+}
+/* CSS für den Text unter den Bildern */
+.image-container2 figcaption {
+  text-align: center; /* Zentriert den Text */
+}
+
+/* Add this CSS to center the images */
+article img {
+  display: block;
+  margin: 0 auto;
+}
+/* Add this CSS to style the image container */
+.image-container2 {
+  display: flex;
+  justify-content: center; /* Center the images horizontally */
+  align-items: center; /* Center the images vertically */
+}
+
+.image-container2 img {
+  margin-right: 0px; /* Optional: Add some space between images */
+  margin-left: 0px;
+}
+
+
+h1{
+    font-size: 70px;
+    margin-top: 100px;
+}
+h2{
+    font-size: 70px;
+    margin-top: 5px;
+    color: rgb(255, 159, 127);
+}
+h3{
+    font-size: 50px;
+    margin-top: 5px;
+    color: rgb(33, 31, 31);
+}
+h4{
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+h5{
+  font-size: 40px;
+    margin-top: 10px;
+    color: rgb(57, 54, 54);
+}
+blockquote {
+  background-color: #fdede0; /* Pastel orange color */
+  padding: 10px; /* Add some padding for better readability */
+}
+
+
+@media only screen and (max-width: 768px) {
+  .logo {
+    position: relative; /* Change position to relative */
+    top: auto;
+    left: auto;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 100px;
+    z-index: 1;
+  }
+
+  nav {
+    position: relative; /* Change position to relative */
+    top: auto;
+    right: auto;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  hgroup {
+    position: relative; /* Change position to relative */
+    left: auto;
+    top: auto;
+    transform: none;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  header {
+    margin-top: 40px; /* Adjust as needed */
+  }
+
+  /* Adjust margin for other sections as needed */
+  #article0 {
+    margin-top: 250px;
+  }
+  article {
+    margin-top: 50px;
+  }
+
+  h3 {
+    margin-top: 50px; /* Adjust as needed */
+  }
+}
+    </style>
+    <script>
+      function toggleContent(articleId) {
+        var content = document.getElementById(articleId + "Content");
+        if (content.style.display === "none") {
+          content.style.display = "block";
+        } else {
+          content.style.display = "none";
+        }
+      }
+    </script>
+  </body>
 </html>
