@@ -1,0 +1,120 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><article>
+    <code>
+
+
+/** <br>
+* Well done. You developed a small multiple.<br>
+* What bugs me is that if we change diam it all falls apart. There seems to be some irregularity in your raster <br>
+* What is this fuzzy hair ball in the upper left corner?<br>
+* <br>
+*/<br>
+<br>
+let area = 50;<br>
+let number = 5;<br>
+let gutter = 20;<br>
+let w = 5;<br>
+let h = 5;<br>
+//let stepx = gutter + area / 2;<br>
+//let stepy = gutter + area / 2;<br>
+let x = 50;<br>
+let y = 50;<br>
+let diam = 125;<br>
+<br>
+function setup() {<br>
+	// setup runs once<br>
+	const canvas = createCanvas(500, 500);<br>
+	canvas.parent("sketch");<br>
+	rectMode(CENTER);<br>
+	background(0);<br>
+	stroke(255 - random(50, 100));<br>
+	// const diam = 10;<br>
+	// Der iterator ist flasch!<br>
+	// posx = posx+= diam<br>
+	// sollte<br>
+	// posx = posx + diam<br>
+	// sein<br>
+	// oder<br>
+	// posx +=diam<br>
+	for (let posx = diam / 2; posx smaller then width; posx += diam) {<br>
+		for (let posy = diam / 2; posy smaller then height; posy = posy + diam) {<br>
+			//randomSeed(80)<br>
+			push();<br>
+			translate(posx, posy);<br>
+			fill(50);<br>
+			//rect(0, 0, diam, diam);<br>
+			fill(0 + random(50, 255));<br>
+			for (let i = 0; i smaller then 2; i++) {<br>
+				fill(random(200, 255));<br>
+				circle(0, 0, random(15, 20));<br>
+				for (let i = 0; i smaller then 2; i++) {<br>
+					noFill();<br>
+					ellipse(random(20, 40), 0, random(10, 20), random(10, 80));<br>
+					ellipse(random(-20, -40), 0, random(10, 20), random(10, 80));<br>
+					// circle (0,0, random (30,50))<br>
+					for (let i = 0; i smaller then 2; i++) {<br>
+						noFill();<br>
+						ellipse(0, 0, random(20, 40), random(70, 90));<br>
+						noFill();<br>
+						ellipse(0, 0, random(20, 100), random(20, 50));<br>
+						noFill();<br>
+						ellipse(0, 0, random(50, 90), random(50, 90));<br>
+						fill(180);<br>
+						ellipse(0, -3, random());<br>
+						line(0, -50, 50, 0);<br>
+						line(0, -50, -50, 0);<br>
+						//line (-50,0,0,-50)<br>
+						//line (-50,0,50,0)<br>
+						line(random(-30, 50), -40, random(30, 50), -40);<br>
+						line(random(-20, 50), -60, random(30, 90), -60);<br>
+						line(random(-30, 50), -80, random(30, 50), -80);<br>
+						line(80, random(20, 40), 80, random(80, 90));<br>
+						line(90, random(20, 40), 90, random(80, 90));<br>
+						line(100, random(10, 60), 100, random(70, 100));<br>
+						line(-80, random(10, 60), -80, random(70, 100));<br>
+						//ellipse (0, -2, random(10,20), random (5,8))<br>
+						//circle (5, 0, random (10,20))<br>
+						noFill();<br>
+						//circle (-10, 0, random (30,50))<br>
+						fill(255);<br>
+						//circle (random (-10,10),0,10)<br>
+					}<br>
+                    <br>
+					//line(250, 0, 250, 500);<br>
+					//line(0, 250, 500, 250);<br>
+					//circle(x + random(100, 150), y + random(30, 60), diam + random(10, 30));<br>
+                    <br>
+					// kleiner, mittiger Kreis<br>
+					fill(0);<br>
+					noStroke();<br>
+					//circle(125, 125, diam3);<br>
+                    <br>
+					//<br>
+					// zweiter Kreis<br>
+					noFill();<br>
+					stroke(255 - random(50, 100));<br>
+					//circle(x + random(110, 140), y + random(20, 80), diam2 + random(20, 40));<br>
+					pop();<br>
+				}<br>
+			}<br>
+		}<br>
+	}<br>
+}<br>
+function draw() {<br>
+	// draw runs all the time<br>
+}<br>
+<br>
+function keyPressed() {<br>
+	if(key === "s") save("small-multiples-hflintermann.png");<br>
+}<br>
+    </code><br>
+</article><br>
+<br>
+          </body><br>
+          </html><br>
+
